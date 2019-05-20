@@ -48,7 +48,7 @@ class Config:
         self.app_package = self.get_config(Config.TITLE_NAME, Config.VALUE_APP_PACKAGE)
         self.account_success = self.get_config(Config.TITLE_ACCOUNT, Config.VALUE_ACCOUNT_SUCCESS)
         self.password_success = self.get_config(Config.TITLE_ACCOUNT, Config.VALUE_PASSWORD_SUCCESS)
-        self.name  = self.get_config(Config.TITLE_ACCOUNT, Config.VALUE_ACCOUNT_NAME)
+        self.account_name  = self.get_config(Config.TITLE_ACCOUNT, Config.VALUE_ACCOUNT_NAME)
 
     def set_config(self, title, value, text):
         self.cp.set(title, value, text)
